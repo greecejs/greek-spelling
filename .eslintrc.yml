@@ -1,0 +1,5 @@
+extends: eslint:recommended
+parserOptions:
+  sourceType: module
+rules:
+  comma-dangle: [2, 'always-multiline']
