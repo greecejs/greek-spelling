@@ -15,7 +15,7 @@ function convert(text, kind) {
     prev[curr] = letters[curr][kind];
     return prev;
   }, {});
-  const covertionMap = Object.assign(lettersMap, numbers, punctuationMarks);
+  const covertionMap = Object.assign({}, lettersMap, numbers, punctuationMarks);
   const nomalizedText = normalize(text);
   return nomalizedText.split('').map(char => covertionMap[char]);
 }
