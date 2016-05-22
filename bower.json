@@ -1,0 +1,37 @@
+{
+  "name": "greek-spelling",
+  "description": "Greek spelling alphabet",
+  "main": "dist/greekSpelling.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "authors": [
+    {
+      "name": "Thanos Lefteris",
+      "email": "alefteris@gmail.com",
+      "url": "http://thanoslefteris.com/"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "greece",
+    "greek",
+    "spelling",
+    "phonetic",
+    "alphabet"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greecejs/greek-spelling.git"
+  },
+  "homepage": "https://github.com/greecejs/greek-spelling",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
