@@ -3,7 +3,7 @@ import uglify from 'rollup-plugin-uglify';
 
 const moduleName = 'greekSpelling';
 
-export default {
+const config = {
   entry: 'src/index.js',
   format: 'umd',
   moduleName,
@@ -12,8 +12,14 @@ export default {
       babelrc: false,
       presets: ['es2015-rollup'],
     }),
-    uglify(),
   ],
   sourceMap: true,
   dest: `dist/${moduleName}.js`,
 };
+
+if (process.env.MINIFY === '1') {
+  config.plugins.push(uglify());
+  config.dest = `dist/${moduleName}.min.js`;
+}
+
+export default config;

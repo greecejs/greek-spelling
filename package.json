@@ -5,7 +5,7 @@
   "main": "dist/greekSpelling.js",
   "jsnext:main": "src/index.js",
   "scripts": {
-    "build": "rollup -c",
+    "build": "MINIFY=0 rollup -c && MINIFY=1 rollup -c",
     "test": "ava --require babel-register",
     "lint": "eslint .",
     "cover": "nyc --reporter=lcov --reporter=text --check-coverage true --branches 100 --functions 100 --lines 100 --statements 100 npm t",
