@@ -8,6 +8,8 @@
 npm install greek-spelling
 ```
 
+In case you don't use a module bundler, there is a UMD build in the `dist` directory.
+
 ## Usage
 
 ```js
